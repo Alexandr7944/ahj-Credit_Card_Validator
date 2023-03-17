@@ -1,0 +1,56 @@
+@import './nullstyle.sass'
+
+$shadowEf: 0 0 8px 5px rgba(65, 209, 245, 0.6)
+
+body
+  display: flex
+  justify-content: center
+  align-items: center
+
+.card__list
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 10px
+
+.card__item
+  img
+    width: 50px
+
+.filter
+  filter: grayscale(100%)
+
+form
+  margin-top: 40px
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 20px
+
+.submit,
+.input
+  box-shadow: 0 0 8px 5px #9e9898
+  border-radius: 10px
+  height: 40px
+  padding: 5px 15px
+
+.input
+  flex: 1 0 300px
+  &:focus
+    box-shadow: $shadowEf
+
+.submit
+  cursor: pointer
+  background-color: transparent
+  &:hover
+    box-shadow: $shadowEf
+
+.hint
+  margin: 30px auto 0
+  border-radius: 10px
+  padding: 10px
+  text-align: center
+  font-size: 18px
+  text-transform: uppercase
+  box-shadow: $shadowEf
+  transition: .3s opacity
