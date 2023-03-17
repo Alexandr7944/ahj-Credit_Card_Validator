@@ -18,4 +18,6 @@ formEl.addEventListener("submit", (e) => {
   form.onSubmit(e)
     ? new Hint(container).addHint("С номером все впорядке")
     : new Hint(container).addHint("Есть ошибка в номере карты");
+
+  formEl.reset();
 });
