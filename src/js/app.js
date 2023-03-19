@@ -10,7 +10,6 @@ const cards = new Cards(container);
 
 formEl.input.addEventListener("input", () => {
   const inputValue = formEl.input.value;
-  if (inputValue.length > 2) return;
   cards.showCard(inputValue);
 });
 
